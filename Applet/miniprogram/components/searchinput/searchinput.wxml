@@ -1,0 +1,21 @@
+<view class="searchbar">
+  <view class="content">
+    <image src="https://s4.ax1x.com/2022/02/14/H6ZpJU.png" class="search-icon"></image>
+    <input 
+      bindinput="handleInput"
+      bindconfirm="handleConfirm"
+      type="text"
+      value="{{inputValue}}" 
+      placeholder="{{placeholder}}" 
+      class="input"
+      confirm-type="search"
+    ></input>
+    <image
+     wx:if="{{inputValue}}" 
+     bindtap="handleDeleteClick"
+     src="https://s4.ax1x.com/2022/02/14/H6VOLn.png"
+     class="delete-icon"
+    ></image>
+    <view wx:if="{{inputValue}}" bindtap="handleConfirm" class="text-btn">搜索</view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<!--pages/gr/gr.wxml-->
+
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 登录 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="user_bg" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <image bindtap="bindViewTap" class="user_icon" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<view class= "user_content">
+  <view class="user_main">
+    <view class="list-item" bindtap="collection">
+      <navigator url="/pages/sc/sc" hover-class="navigator-hover">
+        <image class="item-image" src="https://s4.ax1x.com/2022/02/14/H6leRP.png"></image>
+        <text class="item-text">我的收藏</text>
+        <image class="image-jiantou" src="https://s4.ax1x.com/2022/02/14/H6lVPI.png"></image>
+      </navigator>
+    </view>
+    <view class="list-item" bindtap="history">
+    <navigator  url="/pages/history/history" hover-class="navigator1-hover" >
+      <image class="item-image" src="https://i.jpg.dog/file/jpg-dog/24bfbdd7ca53fd64e8ef660abdee8e7e.png"></image>
+      <text class="item-text">历史足迹</text>
+      <image class="image-jiantou" src="https://s4.ax1x.com/2022/02/14/H6lVPI.png"></image>
+    </navigator>
+    </view>
+    <view class="list-item" bindtap="kp">
+      <navigator  url="/pages/kp/kp" hover-class="navigator1-hover" >
+        <image class="item-image" src="https://s4.ax1x.com/2022/02/14/H6lmxf.png"></image>
+        <text class="item-text">GIS科普</text>
+        <image class="image-jiantou" src="https://s4.ax1x.com/2022/02/14/H6lVPI.png"></image>
+      </navigator>
+    </view>
+    <view class="list-item" bindtap="loginout">
+        <image class="item-image" src="https://s4.ax1x.com/2022/02/14/H6lZGt.png"></image>
+        <text class="item-text">退出登录</text>
+        <image class="image-jiantou" src="https://s4.ax1x.com/2022/02/14/H6lVPI.png"></image>
+    </view>
+  </view>
+</view>

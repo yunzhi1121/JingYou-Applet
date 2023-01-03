@@ -1,0 +1,47 @@
+/* pages/kp/kp.wxss */
+page{
+  overflow: hidden;
+  background: #efefef;
+}
+.scroll-box{
+  white-space: nowrap;
+  height: 105vh;
+}
+
+.card-box{
+  display: inline-block;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  box-sizing: border-box;
+  height: 92vh;
+  width: 92vw;
+  margin: 4vh 4vw;
+  background: #ffffff;
+  border-radius: 6px;
+}
+.img{
+  width: 80vw;
+  height: 30vh;
+  margin: 2vh 0.5vw;
+  border-radius: 6px;
+}
+.tit{
+  width: 85vw;
+  height: 9vh;
+  margin: 2vh 0.5vw;
+  word-break: break-all;
+  font-size:auto;      /*设置文字字号*/
+  letter-spacing:1px;
+  font-weight:bold; 
+  white-space:pre-wrap;
+}
+.con{
+  width: 85vw;
+  height: 45vh;
+  font-size:auto;    
+  white-space:pre-wrap;
+}

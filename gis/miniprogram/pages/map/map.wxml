@@ -1,0 +1,25 @@
+
+ <map id="map" class="map_map" 
+ longitude="{{lon}}" latitude="{{lat}}"
+ subkey="JDPBZ-6EOEQ-YCA52-G56RE-M6ZMO-2ABZZ"
+ layer-style="1"
+ scale="8" 
+ markers="{{markers}}" 
+ style="width: 100%; height: 100vh;" 
+ bindmarkertap="bindmarkertap">
+ <searchinput
+	  placeholder="请输入关键字"
+	  bind:handleSearch="handleSearch"
+    class="sousuo"
+	></searchinput>
+	<!-- tab点击切换不同内容 -->
+	<view class="checkbox">
+		<view class="xmwzBLi {{index==xmwzB_index?'on':''}}" data-index='{{index}}' catchtap="xmwzB_click" wx:for='{{tabs}}' wx:key='index'>
+			<image class="img" src="{{index!=xmwzB_index?item.ico:item.ico_active}}"></image>
+			{{item.name}}
+		</view>
+	</view>
+
+	<!-- 导航图标，点击跳转导航 -->
+	<image class="navigation_btn" src="https://s4.ax1x.com/2022/02/21/HjAOqe.png" bindtap="show_big_map" hidden="{{!navigation}}"></image>
+</map>

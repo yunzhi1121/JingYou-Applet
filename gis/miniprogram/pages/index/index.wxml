@@ -1,0 +1,117 @@
+
+<view class="pyg_index">
+  <image class="pic" src="https://s4.ax1x.com/2022/02/14/Hytlx1.jpg"/>
+	<!-- 搜索框 开始 -->
+	<searchinput
+	  placeholder="请输入关键字"
+	  bind:handleSearch="handleSearch"
+    class="sousuo"
+	></searchinput> 
+	<!-- 搜索框 结束 -->
+  <view class="logo">
+    <image src="https://s4.ax1x.com/2022/02/16/Hhab6K.png"></image>
+  </view>
+  <!-- 天气按钮 -->
+  <view class="change" hidden="{{show}}">
+    <button bindtap="change1">查看天气</button>
+  </view>
+  <!-- 天气框 -->
+  <view class="weat" wx:if="{{show}}" bindtap="change0">
+    <view class="tempall">
+      <view class="temp"><text>{{temperature}}℃</text></view>
+    </view>
+    <view class="weather">
+      <view class="humid">
+        <view>天气：{{weather}}</view>
+      </view>
+      <view class="humid">
+        <view>{{winddirection}}风 {{windpower}}级</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 景区推荐 -->
+<view class="major">
+  <view class="majorCon">
+    <view class="box" bindtap="a5" data-title="5A级景区">
+      <image class="pic" src="https://s4.ax1x.com/2022/02/14/H6VxoV.png"/>
+      <view class="txt">5A级景区</view>
+    </view>
+    <view class="box" bindtap="a4" data-title="4A级景区">
+      <image class="pic" src="https://s4.ax1x.com/2022/02/14/H6VjZq.png"/>
+      <view class="txt">4A级景区</view>
+    </view>
+    <view class="box" bindtap="top" data-title="高评分景区">
+      <image class="pic" src="https://s4.ax1x.com/2022/02/14/H6ZSiT.png"/> 
+      <view class="txt">高评分景区</view>
+    </view>
+    <view class="box" bindtap="a3" data-title="优选景区">
+      <image class="pic" src="https://s4.ax1x.com/2022/02/14/H6Vvd0.png"/> 
+      <view class="txt">优选景区</view>
+    </view>
+  </view>
+</view>
+
+
+
+<!-- 景区推荐 -->
+<view class="works">
+  <view class="container">
+    <view class="pubTitle">
+      <view class="txt">景区推荐</view>
+    </view>
+    <view class="wkMain">
+      <navigator class="box" bindtap="getname" data-name="故宫博物院">
+        <image class="pic" src="https://z3.ax1x.com/2021/05/28/2kN7jg.png"></image>
+        <view class="ceng">
+          <view class="tit">故宫</view>
+          <view class="line"></view>
+          <view class="des">The Forbidden City</view>
+        </view>
+      </navigator>
+      <navigator class="box" bindtap="getname" data-name="八达岭长城风景名胜区">
+        <image class="pic" src="https://s4.ax1x.com/2022/02/14/HytrsP.png"></image>
+        <view class="ceng">
+          <view class="tit">长城</view>
+          <view class="line"></view>
+          <view class="des">The Great Wall</view>
+        </view>
+      </navigator>
+      <navigator class="box" bindtap="getname" data-name="天坛公园">
+        <image class="pic" src="https://s4.ax1x.com/2022/02/14/Hyt0xI.png"></image>
+        <view class="ceng">
+          <view class="tit">天坛</view>
+          <view class="line"></view>
+          <view class="des">The temple of heaven</view>
+        </view>
+      </navigator>
+      <navigator class="box" bindtap="getname" data-name="颐和园">
+        <image class="pic" src="https://s4.ax1x.com/2022/02/14/HytDMt.png" ></image>
+        <view class="ceng">
+          <view class="tit">颐和园</view>
+          <view class="line"></view>
+          <view class="des">The Summer Palace</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="works">
+  <view class="container">
+    <view class="pubTitle">
+      <view class="txt">{{M}}月份热门景区</view>
+    </view>
+
+    <view class="wkMain">
+      <view class="box" wx:for="{{season}}" wx:key="index" bindtap="jing" data-name="{{item.name}}">
+        <image class="pic1" src="{{img}}{{item.name}}.jpg"></image>
+        <view class="ceng1">
+          <view class="tit">{{item.name}}</view>
+          <view class="line"></view>
+          <view class="des">{{item.en}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

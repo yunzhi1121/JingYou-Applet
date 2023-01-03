@@ -1,0 +1,18 @@
+<view wx:if="{{!hasUserInfo}}">
+ <view wx:if="{{canIUse}}" >
+  <view class='header'>
+   <image src='https://i.jpg.dog/file/jpg-dog/101c4b23be43e2a0f8395e4e18986657.png'></image>
+  </view>
+  
+  <view class='content'>
+   <view>申请获取以下权限</view>
+   <text>获得你的公开信息(昵称，头像等)</text>
+  </view>
+  
+  <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"class='bottom' type='primary' style="width: 40%; background-color: #741f09;"> 授权登录 </button>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"class='bottom' type='primary' style="width: 40%; background-color: #741f09;"> 授权登录 </button>
+
+ </view>
+ <view wx:else>请升级微信版本</view>
+</view>
+

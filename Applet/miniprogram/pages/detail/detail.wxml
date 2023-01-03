@@ -1,0 +1,74 @@
+<view class='container'>
+  <!-- 景点图片 -->
+  <view class='image-container'>
+    <image wx:if="{{img}}{{scen.name}}.jpg" src="{{img}}{{scen.name}}.jpg" class="slide-image" />
+  </view>
+   <!-- 景点名字 & 级别  -->
+  <view class='title-container'>
+    <view class="title">{{scen.name}}</view>
+  </view>
+  <view class='level-container'>
+    <text class='level'>   {{scen.level}}级景区</text>
+    <view class='level-box'>
+      <text style="font-size: 35rpx; color: red;">{{scen.score}}分</text>
+      <text>{{scen.review}}</text>
+    </view>
+    <image class="pic" src="{{imgsc}}" width="10rps" height="10rps" bindtap="sc"></image>
+    <text style="font-size: 26rpx; color: black;" bindtap="sc"> {{txtsc}}</text>
+  </view>
+  <!-- 电话 & 地址 -->
+  <view class="su-table-box">
+    <view class="su-table">
+    <!-- 表格内容 -->
+      <view class="su-tr">
+          <view class="td-img" style="width: 50rpx; padding-top: 5rpx;"><image src="https://s4.ax1x.com/2022/02/14/H6m1at.png"/></view>
+          <view class="td-img">{{scen.tel}}</view>
+      </view>
+      <view class="su-tr">
+        <view class="td-img"><image src="https://s4.ax1x.com/2022/02/14/H6muKH.png"/></view>
+        <view class="td-img"> {{scen.time}}</view>
+      </view>
+      <view class="su-tr">
+        <view class="td-img"><image src="https://s4.ax1x.com/2022/02/14/H6me2D.png"/></view>
+        <view class="td-img">{{scen.prices}}</view>
+      </view>
+      <view class="su-tr">
+          <view class="td-img"><image src="https://s4.ax1x.com/2022/02/14/H6mlVI.png"/></view>
+          <view class="td-img"> {{scen.address}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 详细介绍 -->
+  <view class="line"><span>景点介绍</span></view>
+  <view class='desc-container'>
+    <view class='desc' wx:for="{{scen.desc}}" wx:key="index">
+      <text style="white-space:pre-wrap">{{item}}</text> 
+    </view>
+  </view>
+
+  <!-- 底部 -->
+    <view class='bottom-container'>
+      <view class='box1' bindtap="go" data-name="{{scen.name}}" data-x="{{scen.X}}" data-y="{{scen.Y}}">
+        <image class="pic" src="https://s4.ax1x.com/2022/02/17/H4j18e.png"></image>
+        <text>到这里</text>
+      </view>
+      <view class='box1' bindtap="mysc">
+        <image class="pic" src="https://s4.ax1x.com/2022/02/14/H6mmxe.png" width="10rps" height="10rps"></image>
+        <text>我的收藏</text>
+      </view>
+      <view class='box1' bindtap="xc">
+        <image class="pic" src="https://s4.ax1x.com/2022/02/14/H6mKrd.png" width="10rps" height="10rps"></image>
+        <text>打开携程</text>
+      </view>
+      <view class='box2'>
+        <view class='collect' bindtap="around" data-name="{{scen.name}}" data-x="{{scen.X}}" data-y="{{scen.Y}}"><text>查看附近</text></view>
+        <view class='fenxiang'>
+            <button class="fenxiang" open-type="share">分享</button>
+        </view>
+      </view>
+  </view>
+  <!-- https://s3.bmp.ovh/imgs/2022/02/03c2fa3e5dea9ccc.png -->
+  <image src='https://s3.bmp.ovh/imgs/2022/02/03c2fa3e5dea9ccc.png' class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"></image>
+
+</view>
+

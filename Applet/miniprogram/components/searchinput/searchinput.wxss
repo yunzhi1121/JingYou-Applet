@@ -1,0 +1,46 @@
+
+.searchbar {
+  width: 90%;
+  height: 88rpx;
+  padding: 20rpx 30rpx;
+  display: flex;
+  margin: auto;
+  margin-bottom: 400rpx;
+}
+.content {
+  width: 600rpx;
+  height: 88rpx;
+  padding: 0 18rpx;
+  background: rgba(255,255,255,1);
+  border-radius: 35rpx;
+  border: 2rpx solid rgba(220,222,226,1);
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+  width: 45rpx;
+  height: 45rpx;
+  margin-bottom: -4rpx;
+}
+.input {
+  flex: 1;
+  margin: 0 45rpx;
+  height: 100%;
+  padding-left: 15rpx;
+}
+.delete-icon {
+  width: 37rpx;
+  height: 37rpx;
+  margin-left: 530rpx;
+  margin-bottom: -2rpx;
+}
+.text-btn {
+  margin-left: 24rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC;
+  font-weight: 550;
+  color: #741f09;
+}

@@ -1,0 +1,12 @@
+<scroll-view class="scroll-box" scroll-x scroll-with-animation
+  scroll-into-view="{{toView}}"
+  bindtouchstart="touchStart"
+  bindtouchend="touchEnd">
+    <view wx:for="{{list}}" wx:key="index" class="card-box" id="card_{{index}}">
+      <view class="card">
+        <image bindtap="topic_preview" data-id='{{item.id}}' data-url='{{item.img}}' src="{{item.img}}" class="img"></image>
+        <view class="tit">{{item.title}}</view>
+        <view class="con">{{item.content}}</view>
+      </view>
+    </view>
+</scroll-view>

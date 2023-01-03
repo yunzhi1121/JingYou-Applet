@@ -1,0 +1,18 @@
+<view wx:if="{{carts==''}}" class="vacancy">
+  <image src="https://s4.ax1x.com/2022/02/14/H6ez2F.png"></image>
+  <view>无浏览记录</view>
+</view>
+<view wx:else>
+  <view class="list" wx:for="{{carts}}" wx:key="index">
+    <view class="pic-con" bindtap="getname" data-name="{{item.scenery}}">
+      <!-- 图片 -->
+      <view class="pic">
+        <image src="{{img}}{{item.scenery}}.jpg">img</image>
+      </view>
+      <view class="con" >
+          <text class="type1" >{{item.scenery}}</text>
+          <button id="buy-right" data-name="{{item.scenery}}">查看</button>
+      </view>
+    </view>
+  </view>
+</view>

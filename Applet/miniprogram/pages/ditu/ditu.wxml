@@ -1,0 +1,36 @@
+
+<!-- <searchinput
+  placeholder="请输入关键字"
+  bind:handleSearch="handleSearch"
+></searchinput>  -->
+
+<map class="map"></map>
+
+
+<!-- <image 
+mode="widthFix"
+src="https://ftp.bmp.ovh/imgs/2021/05/145b3b48fa92e3e8.jpg" 
+class="ditu">
+</image>
+<image 
+mode="widthFix"
+src="https://ftp.bmp.ovh/imgs/2021/05/5d8aa9bf75467d55.jpg" 
+class="ditu">
+</image>
+<image 
+mode="widthFix"
+src="https://ftp.bmp.ovh/imgs/2021/05/90f45b84469e6f4d.jpg" 
+class="ditu">
+</image>
+<image 
+mode="widthFix"
+src="https://ftp.bmp.ovh/imgs/2021/05/0557da61a2519f33.jpg" 
+class="ditu">
+</image> -->
+
+<!-- <view class="button">
+  <navigator  url="/pages/GIS/GIS" hover-class="navigator1-hover">
+      <text class="item-text">关于GIS</text>
+      <image class="image-jiantou" src="https://ftp.bmp.ovh/imgs/2021/05/ed4339846bebdfaf.png"></image>
+    </navigator>
+</view> -->

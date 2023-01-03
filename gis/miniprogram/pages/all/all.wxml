@@ -1,0 +1,19 @@
+<view wx:if="{{carts==''}}" class="vacancy">
+  <image src="https://s4.ax1x.com/2022/02/14/H6ez2F.png"></image>
+  <view>好像是空的欸</view>
+</view>
+<view wx:else>
+  <view class="list" wx:for="{{carts}}" wx:key="index">
+    <view class="pic-con" bindtap="getname" data-name="{{item.name}}">
+      <!-- 图片 -->
+      <view class="pic">
+        <image src="{{img}}{{item.name}}.jpg">img</image>
+      </view>
+      <view class="con" >
+          <text class="type1" > {{item.name}} </text>
+          <text class="type2">{{item.desc}}</text>
+          <button id="buy-right">评分 ：{{item.score}}分</button>
+       </view>
+      </view>
+  </view>
+</view>

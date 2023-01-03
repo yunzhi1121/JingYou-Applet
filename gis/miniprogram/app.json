@@ -1,0 +1,66 @@
+{
+    "pages": [
+        "pages/register/register",
+        "pages/index/index",
+        "pages/person/person",
+        "pages/collect/collect",
+        "pages/detail/detail",
+        "pages/history/history",
+        "pages/list/list",
+        "pages/science/science",
+        "pages/all/all",
+        "pages/around/around",
+        "pages/map/map"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#741f09",
+        "navigationBarTitleText": "北京市旅游GIS信息",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#fff"
+    },
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.19",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序定位"
+        }
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/图标/tabbar/首页-no.png",
+                "selectedIconPath": "/图标/tabbar/首页-yes.png"
+            },
+            {
+                "pagePath": "pages/all/all",
+                "text": "所有景点",
+                "iconPath": "/图标/tabbar/所有景点-no.png",
+                "selectedIconPath": "/图标/tabbar/所有景点-yes.png"
+            },
+            {
+                "pagePath": "pages/map/map",
+                "text": "地图",
+                "iconPath": "/图标/tabbar/地图-no.png",
+                "selectedIconPath": "/图标/tabbar/地图-yes.png"
+            },
+            {
+                "pagePath": "pages/person/person",
+                "text": "个人",
+                "iconPath": "/图标/tabbar/用户-no.png",
+                "selectedIconPath": "/图标/tabbar/用户-yes.png"
+            }
+        ],
+        "selectedColor": "#741f09"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "lazyCodeLoading": "requiredComponents"
+}

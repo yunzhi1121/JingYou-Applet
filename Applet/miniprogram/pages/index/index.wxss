@@ -1,0 +1,94 @@
+.pyg_index{  width: 100%; height: 560rpx; display: flex; align-items: flex-end; background: whitesmoke; position: relative; }
+.pyg_index image{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; position: absolute; }
+.pyg_index .pic{ width: 100%; height: 560rpx; }
+.pyg_index .sousuo{ display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 550rpx; opacity: 0.7;
+  align-items: center; position: absolute; }
+.sousuo .searchbar{ width: 500rpx; }
+
+.change{ position: absolute; right: 250rpx; }
+.change button:not([size='mini']){  width: 220rpx; background-color: #741f09; color: white; width: 220rpx;
+  font-size: 26rpx; border-radius: 40rpx; opacity: 0.8; position: absolute; bottom: 30rpx; }
+.logo image{ top: 200rpx; width: 150rpx; height: 140rpx; left: 65rpx; }
+
+.majorCon{display:flex; padding:20rpx 0}
+.major .box{text-align: center;width:250rpx}
+.major .box image{width: 130rpx; height: 130rpx;}
+.major .txt{font-size: 26rpx;}
+
+.works{ background: #f0f3f8; padding: 50rpx 0 70rpx;}
+.wkMain{ display: flex; flex-wrap: wrap; justify-content: space-between;}
+.wkMain .box{ width: 345rpx; height: 214rpx; margin-bottom: 15rpx; position: relative;}
+.wkMain .pic{ width: 100%; height: 100%;}
+.wkMain .pic1{ width: 100%; height: 100%; opacity: 0.8;}
+
+.wkMain .ceng{ width: 100%; height: 100%; background:  rgba(0,0,0,0.3); position: absolute; top: 0; left: 0; color:#fff;text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0 20rpx; box-sizing: border-box;}
+.wkMain .ceng .tit{ font-size: 32rpx;}
+.wkMain .ceng .line{ width: 50rpx; height: 3rpx; background: #fff; margin: 10rpx 0 15rpx;}
+.wkMain .ceng .des{ opacity: 0.6; text-transform: uppercase; font-size: 24rpx; letter-spacing: 5rpx;}
+
+.wkMain .ceng1{ width: 100%; height: 100%; background:  rgba(0,0,0,0.3); position: absolute; top: 0; left: 0; color:#fff;text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0 5rpx; box-sizing: border-box;}
+.wkMain .ceng1 .tit{ font-size: 28rpx;font-weight: 600;}
+.wkMain .ceng1 .line{ width: 50rpx; height: 5rpx; background: #fff; margin: 10rpx 0 15rpx;}
+.wkMain .ceng1 .des{ opacity: 0.6; text-transform: uppercase; font-size: 23rpx; letter-spacing: 4rpx;}
+
+.container{ padding: 0 26rpx; box-sizing: border-box;}
+@keyframes dh{ 0%,50%,100%{opacity:1;} 25%{opacity: 0;} }
+
+.pubTitle{display: flex; justify-content: space-between; height: 60rpx; align-items: center; margin-bottom: 40rpx;}
+.pubTitle .txt{font-size: 40rpx; position: relative; padding-left: 15rpx;}
+.pubTitle .txt::before{display: block; width: 8rpx; height: 34rpx; background: #741f09; content: ""; position: absolute; left: 0; top: 50%; margin-top: -15rpx;}
+
+/* 天气 */
+.weat {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  background: white;
+  position: absolute;
+  opacity: 0.5;
+  right: 0;
+  width: 400rpx;
+}
+.location {
+  color: #acacac;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+  /* margin: 22rpx 0; */
+}
+.location image {
+  width: 21rpx;
+  height: 24rpx;
+  margin-left: 30rpx;
+  margin-right: 10rpx;
+}
+.temp {
+  width: auto;
+    color: #5d4530;
+    font-size: 42rpx;
+    text-align: center;
+}
+.type {
+  text-align: center;
+    font-size: 25rpx;
+    font-weight: 600;
+    color: #5d4530;
+}
+.humid {
+  display: flex;
+    font-size: 26rpx;
+    font-weight: 600;
+    color: #5d4530;
+    margin-left: 30rpx;
+    margin: 10rpx 0;
+    width: 100%;
+}
+.tempall{
+  width: 40%;
+  align-items: center;
+}
+.weather{
+  width: 60%;
+}
+

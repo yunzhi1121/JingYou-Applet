@@ -1,0 +1,231 @@
+/* pages/product/product.wxss */
+page {
+  background: #efefef;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+/* 景点图片 */
+.image-container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.slide-image{
+  width:100%;
+  height:500rpx;
+}
+/* 景点名称 */
+.title-container{
+  width: 100%;
+  height: 100rpx;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dcdcdc;
+}
+.title{
+  width:602rpx;
+  max-height:80rpx;
+  font-size:50rpx;
+  color:#141414;
+  line-height:40rpx;
+  margin-left: 28rpx;
+}
+/* 景点级别 */
+.level-container{
+  width: 100%;
+  font-size:40rpx;
+  color:#FC2C1D;
+  line-height:56rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.level-container .level{
+  margin-left: 28rpx;
+  text-align: left;
+  width: 38%;
+}
+.level-container image{
+  width: 60rpx; height: 60rpx;
+  padding: 0rpx 0rpx ;
+  margin: 0 0 0 0rpx;
+}
+.level-container text{
+  vertical-align:middle;
+  text-align: center;
+}
+.level-box{
+  height: 80rpx;
+    width: 30%;
+    flex-direction: column;
+    margin: 15rpx 30rpx -10rpx 0;
+    display: flex;
+}
+.level-box text{
+  font-size:18rpx;
+  color:#6A6A6A;
+  line-height:35rpx;
+  text-align: right;
+}
+/* 景点电话 & 地址 */
+.su-table-box {
+  height: 100%;
+  margin: 0rpx 15rpx;
+  overflow-x: auto;
+  padding-bottom: 0rpx;
+}
+.su-table {
+  margin: auto;
+  width: 95%;
+  display: table;
+  border-collapse: collapse;
+  overflow-x: auto;
+  word-break: keep-all;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+}
+.su-tr {
+  display: table-row;
+}
+.td-img{
+  padding-left: 10rpx;
+  width: auto;
+  height: 60rpx;
+  font-size: 26rpx;
+  display: table-cell;
+  vertical-align:middle;
+  border-bottom: 1rpx solid #DDDDDD;
+  border-top: 1rpx solid #DDDDDD;
+  padding-top: 5rpx;
+}
+.td-img image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-top: 10rpx;
+}
+.bottom-container{
+  width:100%;
+  height:95rpx;
+  position: fixed;
+  bottom: 0;
+  background:rgba(255,255,255,1);
+  box-shadow:0 10rpx 12rpx 12rpx rgba(138,80,80,0.13);
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box1{
+  height: 80rpx;
+  width: 80rpx;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 image{
+  width: 55rpx; height: 55rpx;
+}
+.box1 text{
+  font-size:18rpx;
+  color:#6A6A6A;
+  line-height:26rpx;
+}
+.box2{
+  display: inline-flex;
+}
+.box2>view{
+  width: 190rpx;
+  height:68rpx;
+}
+.collect{
+  background:#bc5a2d;
+  border-top-left-radius: 34rpx;
+  border-bottom-left-radius: 34rpx;
+  text-align: center;
+}
+.fenxiang{
+  background:#741f09;
+  border-top-right-radius: 34rpx;
+  border-bottom-right-radius: 34rpx;
+  text-align: center;
+}
+.collect text,.fenxiang text{
+  font-size:28rpx;
+  color:#FFFFFF;
+  line-height:68rpx;
+}
+
+/* button自带样式清除 */
+.fenxiang button::after {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.fenxiang button {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  font-weight: 500 !important;
+  border-radius: none !important;
+  font-size:28rpx;
+  color:#FFFFFF;
+  line-height:68rpx;
+}
+
+/* 景点介绍 */
+.line{
+  width: 90%;    /* 分隔线的长度 */
+  margin: auto;
+  height: 3rpx;    /* 分隔线粗细 */
+  text-align: center;
+  font-size: 33rpx;
+  color: black;
+  background: #bc5a2d;
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}
+.line span{
+  background-color: #ccc;
+}
+.line span{
+  position: relative;
+  top: -20rpx;
+  background: #fff;
+  padding: 0rpx 20rpx;
+  color: #741f09;
+  font-weight: 550;
+}
+.desc-container{
+  width: 90%;
+  margin: auto;
+  overflow:auto ;
+  font-size: 26rpx;
+  margin-top: -20rpx;
+  margin-bottom: 200rpx;
+  line-height: 60rpx;
+  padding-bottom: 50rpx;
+  /* text-indent:2em; */
+}
+.desc{
+  width: 100%;
+  margin: auto;
+  text-indent:2em;
+  line-height: 60rpx;
+}
+/* 返回顶部 */
+.goTop{
+  height: 70rpx;
+  width: 70rpx;
+  position: fixed;
+  bottom: 200rpx;
+  right: 50rpx;
+  border-radius: 50%;
+}
+
+

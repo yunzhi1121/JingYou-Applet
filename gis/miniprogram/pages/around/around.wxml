@@ -1,0 +1,21 @@
+
+ <map id="map" class="map_map" 
+ longitude="{{lon}}" latitude="{{lat}}"
+ subkey="4JGBZ-YVDLW-2JVR4-RGSUI-FLEGF-MGF5T"
+ layer-style="1"
+ scale="14" 
+ markers="{{markers}}" 
+ style="width: 100%; height: 100vh;" 
+ bindmarkertap="bindmarkertap">
+	
+	<!-- tab点击切换不同内容 -->
+	<view class="xmwzB flex tfAlignC flexSb">
+		<view class="xmwzBLi {{index==xmwzB_index?'on':''}}" data-index='{{index}}' catchtap="xmwzB_click" wx:for='{{tabs}}' wx:key='index'>
+			<image class="img" src="{{index!=xmwzB_index?item.ico:item.ico_active}}"></image>
+			{{item.name}}
+		</view>
+	</view>
+
+	<!-- 导航图标，点击跳转导航 -->
+	<image class="navigation_btn" src="https://s3.bmp.ovh/imgs/2022/02/05406cccfaaad147.png" bindtap="show_big_map" hidden="{{!navigation}}"></image>
+</map>
