@@ -12,6 +12,5 @@
 [![0b41b32488b4f4334c364a5eb32065e5.jpeg](https://i.jpg.dog/0b41b32488b4f4334c364a5eb32065e5.jpeg)](https://jpg.dog/i/KXQR5)
 [![8a2d7c3a1b370ffaed4b1557c63495a9.jpeg](https://i.jpg.dog/8a2d7c3a1b370ffaed4b1557c63495a9.jpeg)](https://jpg.dog/i/KXl4V)
 [![a008dcf2cb4010581241d213992a88ee.jpeg](https://i.jpg.dog/a008dcf2cb4010581241d213992a88ee.jpeg)](https://jpg.dog/i/KXvjJ)
-[![23131601ed531a2fcc175a9428317f90.jpeg](https://i.jpg.dog/23131601ed531a2fcc175a9428317f90.jpeg)](https://jpg.dog/i/Ka7sp)
 [![a891e4da812f582004ff0d8965463770.jpeg](https://i.jpg.dog/a891e4da812f582004ff0d8965463770.jpeg)](https://jpg.dog/i/KapZG)
 [![0152251bfa86db5867e14310960241ac.jpeg](https://i.jpg.dog/0152251bfa86db5867e14310960241ac.jpeg)](https://jpg.dog/i/KaBYF)
